@@ -1,0 +1,189 @@
+/*-----------Starting-------------*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #2B1B2F;
+    color: #F3EDE7;
+}
+
+/*--------------------------------- Start of Header--------------------------------------------------*/
+#header {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    border: 10px solid #2B1B2F;
+}
+
+nav {
+    position: fixed;            /* Keeps the nav bar fixed */
+    top: 0;                     /* Sticks it to the top */
+    left: 0;
+    width: 100%;                /* Full width */
+    background-color: #ad7a3c;  /* Ensures visibility */
+    z-index: 1000;              /* Keeps it above other elements */
+    padding: 15px 20px;         /* Adjust spacing */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.container {
+    padding-top: 80px; /* Prevents content from hiding behind nav */
+}
+
+.logo {
+    width: 70px; 
+    height: auto;
+    border: 3px solid #ad7a3c; 
+    border-radius: 15px;
+    padding: 3px;
+    position: absolute;
+    top: 5px; 
+    left: 20px;
+}
+
+/* Style for the Image */
+.left img {
+    width: 700px; 
+    height: auto;
+    border: 8px solid purple;
+    border-radius: 30px; 
+    padding: 15px; 
+    background-color: #2B1B2F;
+    display: block;
+}
+
+/* Navigation Links */
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding-left: 100px;
+}
+
+nav ul li a {
+    font-family: "Courier New", Courier, monospace;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    background-color: purple;
+    color: #F3EDE7;
+}
+
+/* "BOOK NOW!" Button */
+nav .primary-btn {
+    background-color: #3a2f3a;
+    color: #ad7a3c;
+    padding: 10px 20px;
+    border: 2px solid #ad7a3c;
+    border-radius: 10px;
+    width: 190px;
+    text-decoration: none; 
+    text-align: center; 
+    cursor: pointer;
+}
+
+nav .primary-btn:hover {
+    background-color: purple;
+    color: white;
+}
+
+/* Align BOOK NOW and hamburger icon */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 75px;
+}
+
+/* Text Box for "Hello There!" */
+.header-text {
+    background-color: #2B1B2F;
+    box-shadow: 0 0 15px rgba(173, 122, 60, 0.5);
+    color: #ad7a3c;
+    padding: 30px;
+    border: 3px solid #ad7a3c;
+    border-radius: 20px;
+    max-width: 50%;
+    text-align: left;
+    position: absolute;
+    right: 10%;
+    top: 30%;
+}
+
+.header-text span {
+    color: purple;
+}
+
+.header-text h1::first-letter {
+    font-size: 150px;
+    font-weight: bold;
+    color: #ad7a3c;
+}
+
+/* ---------------------------------------------- End of Header-----------------------------------------*/
+
+/*----------------------- END for Home Page --------------------------------------------------------------*/
+/*--------------------------------- Start of About Section--------------------------------------------------*/
+
+/* Home Section Styling */
+.Home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.Home .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 80%;
+}
+
+.Home .content .item img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    float: right;
+}
+
+/* Text and Buttons Container */
+.Home .content .item .text {
+    background-color: #2B1B2F;
+    color: #ad7a3c;
+    border: 3px solid #ad7a3c;
+    border-radius: 20px;
+    padding: 30px;
+    padding-bottom: 50px; /* merged */
+    max-width: 40%;
+    text-align: left;
+    box-shadow: 0 0 15px rgba(173, 122, 60, 0.5);
+}
+
+
+
+
+
+
+
+
+

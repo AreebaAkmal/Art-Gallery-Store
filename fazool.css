@@ -1,0 +1,1566 @@
+﻿/*-----------Starting-------------*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #2B1B2F;
+    color: #F3EDE7;
+}
+
+/*--------------------------------- Start of Header--------------------------------------------------*/
+/*Donot Change*/
+#header {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    border: 10px solid #2B1B2F;
+}
+
+nav {
+    position: fixed; /* Keeps the nav bar fixed */
+    top: 0; /* Sticks it to the top of the page */
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: #ad7a3c; /* Ensures visibility */
+    z-index: 1000; /* Keeps it above other elements */
+    padding: 15px 10%; /* Adjust spacing */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    padding-top: 80px; /* Prevents content from hiding behind nav */
+}
+
+button{
+    border: none;
+    background: none;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.primary-btn {
+    padding: 17px 43px;
+    background: #2B1B2F;
+    padding: 14px 50px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+}
+
+.secondary-btn {
+    padding: 15px 40px;
+    background: none;
+    border: 1px solid #bf00bf;
+    padding: 14px 50px;
+    border-radius: 6px;
+    font-weight: bold;
+    color: white;
+}
+.logo {
+    width: 70px; 
+    height: auto;
+    border: 3px solid #ad7a3c; /* Border */
+    border-radius: 15px;
+    padding: 3px;
+    position: absolute;
+    top: 5px; /* Moves it up */
+    left: 20px;
+}
+/* Style for the Image */
+.left img {
+    width: 700px; /* Adjust size as needed */
+    height: auto;
+    border: 8px solid purple;
+    border-radius: 30px; /* Rounded corners */
+    padding: 15px; /* Space inside the border */
+    background-color: #2B1B2F;
+    display: block; /* Ensure no extra space */
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ad7a3c;
+    padding: 15px 20px;
+    border-radius: 20px;
+}
+
+    /* Navigation Links */
+   nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding-left: 100px; /* Moves menu items to the right */
+}
+
+nav ul li a {
+    font-family: "Courier New", Courier, monospace;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+            /* Hover Effect */
+    nav ul li a:hover {
+        background-color: purple;
+        color: #F3EDE7;
+    }
+
+    /* "BOOK NOW!" Button */
+    nav .primary-btn {
+        background-color: #3a2f3a;
+        color: #ad7a3c;
+        padding: 10px 20px;
+        border: 2px solid #ad7a3c;
+        border-radius: 10px;
+        width: 190px;
+        text-decoration: none; /* ✅ This removes the underline */
+        text-align: center; /* Centers text properly */
+        cursor: pointer;
+    }
+
+        nav .primary-btn:hover {
+            background-color: purple;
+            color: white;
+        }
+
+/* Align BOOK NOW and hamburger icon */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 75px; /* Adjust spacing between button and menu */
+}
+
+
+/* Cover Image Styling - Smaller & Positioned to the Left */
+.header-image {
+    width: 40%; 
+    border: 3px solid #ad7a3c;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    left: 5%;
+    top: 25%;
+}
+
+/* Text Box for "Hello There!" */
+.header-text {
+    background-color: #2B1B2F;
+    box-shadow: 0 0 15px rgba(173, 122, 60, 0.5);
+    color: #ad7a3c;
+    padding: 30px;
+    border: 3px solid #ad7a3c;
+    border-radius: 20px;
+    max-width: 50%;
+    text-align: left;
+    position: absolute;
+    right: 10%;
+    top: 30%;
+}
+
+    /* "Homies" in Purple */
+    .header-text span {
+        color: purple;
+    }
+
+    /* First Letter of "Welcome" */
+    .header-text h1::first-letter {
+        font-size: 150px;
+        font-weight: bold;
+        color: #ad7a3c;
+    }
+
+/* ---------------------------------------------- End of Header-----------------------------------------*/
+
+/*----------------------- END for Home Page --------------------------------------------------------------*/
+
+/* Home Section Styling */
+.Home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+    /* Content Wrapper */
+    .Home .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        width: 80%;
+    }
+
+        /* Image Styling */
+        .Home .content .item img {
+            width: 50%;
+            height: auto;
+            border-radius: 10px;
+            float: right;
+        }
+
+        /* Text and Buttons Container */
+        .Home .content .item .text {
+            background-color: #2B1B2F;
+            color: #ad7a3c;
+            border: 3px solid #ad7a3c;
+            border-radius: 20px;
+            padding: 30px;
+            max-width: 40%;
+            text-align: left;
+            box-shadow:0 0 15px rgba(173, 122, 60, 0.5);
+        }
+
+            /* Headline Styling */
+            .Home .content .item .text h1 {
+                font-size: 45px;
+                font-weight: bold;
+                margin-bottom: 10px;
+            }
+
+            /* Paragraph Styling */
+            .Home .content .item .text p {
+                font-size: 20px;
+                margin-bottom: 30px; /* Increased space between text and buttons */
+            }
+
+        /* Buttons Container */
+        .Home .content .item .flex {
+            display: flex;
+            gap: 55px;
+            flex-direction: column; /* Moves buttons one line down */
+        }
+
+        /* Text and Buttons Container */
+        .Home .content .item .text {
+            background-color: #2B1B2F;
+            color: #ad7a3c;
+            border: 3px solid #ad7a3c;
+            border-radius: 20px;
+            padding: 30px;
+            max-width: 40%;
+            text-align: left;
+            padding-bottom: 50px; /* Increased bottom padding */
+            box-shadow: 0 0 15px rgba(173, 122, 60, 0.5);
+        }
+
+            /* Paragraph Styling */
+            .Home .content .item .text p {
+                font-size: 20px;
+                margin-bottom: 40px; /* Adds more space below the text */
+            }
+
+        /* Buttons Container */
+        .Home .content .item .flex {
+            display: flex;
+            gap: 15px;
+            flex-direction: row; /* ✅ Now buttons will align horizontally */
+            margin-top: 20px;
+            justify-content: left; /* Optional: center buttons */
+            flex-wrap: wrap; /* Optional: helps on small screens */
+        }
+
+
+/* Buttons Styling */
+.primary-btn, .secondary-btn {
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 235px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Primary Button */
+.primary-btn {
+    background-color: #ad7a3c;
+    color: black;
+    text-decoration: none; /* ✅ This removes the underline */
+    border: 2px solid #ad7a3c;
+}
+
+    .primary-btn:hover {
+        background-color: purple; /* Changes color to purple */
+        color: white;
+        border: 2px solid purple;
+    }
+
+/* Secondary Button */
+.secondary-btn {
+    background-color: #2B1B2F;
+    color: #ad7a3c;
+    border: 2px solid #ad7a3c;
+    text-decoration: none; /* ✅ This removes the underline */
+    display: inline-block; /* ✅ Helps make it behave more like a button */
+    text-align: center; /* Centers text properly */
+}
+
+
+    .secondary-btn:hover {
+        background-color: purple; /* Changes color to purple */
+        color: white;
+        border: 2px solid purple;
+    }
+
+/* Basic modal overlay */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.5); /* Semi-transparent black */
+}
+
+/* Modal content box */
+.modal-content {
+    background-color: #2B1B2F;
+    border: 3px solid #ad7a3c; /* Yellow border */
+    margin: 10% auto; /* Centered vertically */
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 700px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: fadeIn 0.3s ease;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ad7a3c;
+    line-height: 1.6;
+}
+
+    /* Close button */
+    .modal-content .close {
+        color: #ad7a3c;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+        .modal-content .close:hover {
+            color: purple;
+        }
+
+    /* Yellow stars */
+    .modal-content ul li {
+        list-style: none;
+        padding-left: 20px;
+        position: relative;
+        margin-bottom: 8px;
+    }
+
+        .modal-content ul li::before {
+            content: "⭐";
+            color: gold;
+            position: absolute;
+            left: 0;
+        }
+
+    /* Headings */
+    .modal-content h2, .modal-content h3 {
+        color: #ad7a3c;
+        margin-bottom: 10px;
+    }
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*-----------------------  End of ROOM BOOKING ----------------------------------------*/
+/*-----------------------ROOM AVAILABILITY--------------------*/
+.booknow {
+    text-align: center;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #2B1B2F;
+    border-radius: 20px;
+    border: 3px solid #ad7a3c;
+    color: #ad7a3c;
+    width: 60%;
+    box-shadow: 0 0 15px rgba(173, 122, 60, 0.5);
+}
+
+    /* Styling the heading */
+    .booknow .text h1 {
+        font-size: 50px;
+        font-weight: bold;
+        color: #ad7a3c;
+        margin-bottom: 15px;
+    }
+
+        .booknow .text h1 span {
+            font-size: 60px;
+            font-weight: bold;
+            color: #ad7a3c;
+        }
+
+    /* Centering the form */
+    .booknow .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+.hidden-box {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.visible-box {
+    display: block;
+    opacity: 1;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #ad7a3c;
+    border: 2px solid #ad7a3c;
+    border-radius: 10px;
+    font-size: 16px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Form layout with label and input */
+.form-grid {
+    display: grid;
+    gap: 15px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .form-row label {
+        flex: 1;
+        color: #ad7a3c;
+        font-size: 18px;
+        text-align: left;
+    }
+
+    .form-row input {
+        flex: 1;
+        max-width: 200px;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 10px;
+        border: 2px solid #ad7a3c;
+        background: #3a2f3a;
+        color: #ad7a3c;
+        text-align: center;
+    }
+
+/* Submit button styling */
+.form-grid input[type="submit"] {
+    background-color: #ad7a3c;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #ad7a3c;
+    width: 100%;
+}
+
+    .form-grid input[type="submit"]:hover {
+        background-color: #2B1B2F;
+        color: #ad7a3c;
+        border: 2px solid #ad7a3c;
+    }
+
+.services-row {
+    align-items: flex-start;
+}
+
+.services-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 30px; /* row gap and column gap */
+}
+
+    .services-options label {
+        display: flex;
+        align-items: center;
+        white-space: nowrap; /* ensures emoji and text stay on same line */
+        gap: 1px;
+        color: #ad7a3c;
+        font-size: 16px;
+    }
+
+    .services-options input[type="checkbox"] {
+        transform: scale(1.5); /* Increase size */
+        margin-right: 8px; /* Space between checkbox and text */
+        accent-color: #ad7a3c; /* Optional: change checkbox color to match theme */
+        cursor: pointer;
+    }
+
+        .services-options input[type="checkbox"]:hover {
+            background-color: purple;
+            color: purple;
+            border: 2px solid purple;
+            accent-color: purple; /* Changes checkbox color in modern browsers */
+            cursor: pointer;
+        }
+
+
+
+/*-------------------- ABOUT --------------------------*/
+/* Container to keep left and right side by side inside black box */
+.about .container.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2B1B2F;
+    border-radius: 20px;
+    border: 3px solid #ad7a3c;
+    box-shadow: 0 0 15px rgba(173, 122, 60, 0.5);
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+/* LEFT side styling */
+.about .left {
+    width: 48%;
+    color: #ad7a3c;
+    padding: 20px;
+}
+
+/* RIGHT side image container */
+.about .right {
+    width: 48%;
+    padding: 20px;
+}
+
+/* Make image responsive */
+.right img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Heading section inside the left */
+.about .heading {
+    text-align: left;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+    border: 3px solid #ad7a3c;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(173, 122, 60, 0.5);
+}
+
+/* Large first letter effect for "WELCOME" */
+.about h1 {
+    font-size: 50px;
+    color: #ad7a3c;
+    margin-bottom: 0;
+}
+
+    .about h1::first-letter {
+        font-size: 100px;
+        font-weight: bold;
+        color: #ad7a3c;
+    }
+
+/* HOMIE Hostel */
+.about h2 {
+    font-size: 35px;
+    margin-top: 5px;
+    font-family: 'Georgia', serif;
+    font-weight: normal;
+}
+
+/* Paragraph */
+.about p {
+    font-size: 16px;
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+/* Button */
+.about .primary-btn {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid #ad7a3c;
+    color: #ad7a3c;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+    .about .primary-btn:hover {
+        background-color: #ad7a3c;
+        color: black;
+    }
+
+/* Responsive fix for smaller screens */
+@media (max-width: 768px) {
+    .about .left,
+    .about .right {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .about h1 {
+        font-size: 40px;
+    }
+
+    .about h2 {
+        font-size: 28px;
+    }
+}
+
+
+
+/*------------------------ End of About ------------------*/
+/*--------------------------- COUNTER ----------*/
+.counter{
+        background-image: url(wood.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 60vh;
+        width: 100%;
+        color: #bf00bf;
+}.counter .grid{
+     display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    place-items: center;
+    padding-top: 100px;
+}
+
+.counter h1{
+    font-size: 50px;
+}
+
+    .counter hr {
+        width: 100%;
+        margin: 10px auto;
+        background: #bf00bf;
+        height: 2px;
+        border: none;
+    }
+
+    .counter span {
+        display: block;
+        font-size: 18px;
+        color: #bf00bf; /* Ensure visibility */
+        margin-top: 5px;
+    }
+
+/*------------------------- END OF COUNTER ----------*/
+/*ROOM FOR ONE/THREE/FOUR*/
+.text {
+    font-family: "Times New Roman", serif; 
+    font-weight: 400; 
+    line-height: 1.6; 
+    color: #ad7a3c; 
+}
+
+    .text h2 {
+        font-size: 24px; 
+        font-weight: 500;
+        margin-bottom: 10px; 
+    }
+
+    .text p {
+        font-size: 16px; 
+        font-weight: 400; 
+        margin-bottom: 15px; 
+    }
+
+.counter {
+    background-color: #000; /* Optional: black background for contrast */
+    padding: 50px 0;
+    color: #ad7a3c;
+}
+
+    .counter .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .counter .box {
+        flex: 1 1 200px; /* Responsive layout */
+        margin: 20px;
+        padding: 20px;
+        background-color: #2B1B2F; /* Slight contrast box */
+        border-radius: 10px;
+        border: 2px solid #ad7a3c;
+        color: #ad7a3c;
+        box-shadow: 0 0 15px rgb(56, 37, 14, 0.97);
+    }
+
+        .counter .box h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #fff; /* White for numbers */
+        }
+
+        .counter .box hr {
+            border: 1px solid purple;
+            width: 50%;
+            margin: 10px auto;
+        }
+
+        .counter .box span {
+            font-size: 20px;
+            font-weight: 600;
+            display: block;
+            color: #ad7a3c;
+        }
+
+
+/*---------------------------- START OF ROOM BOOKING -------------*/
+/* Styling for the heading container */
+.RoomBooking .heading {
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 20px;
+    display: inline-block;
+    padding: 20px;
+    background-color: #2B1B2F;
+    border-radius: 20px;
+    border: 3px solid #ad7a3c;
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(173, 122, 60, 0.5);
+}
+
+.RoomBooking h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ad7a3c;
+    margin-bottom: 0px;
+    opacity: 1;
+}
+
+    .RoomBooking h1::first-letter {
+        font-size: 150px;
+        font-weight: bold;
+        color: #ad7a3c;
+        opacity: 1;
+    }
+
+.RoomBooking h2 {
+    font-size: 45px;
+    font-weight: normal;
+    color: #ad7a3c;
+    margin-top: -10px;
+    opacity: 1;
+}
+
+.RoomBooking .heading h1,
+.RoomBooking .heading h2 {
+    display: block;
+    padding: 5px 15px;
+}
+
+.RoomBooking .heading p {
+    font-size: 18px;
+    font-weight: normal;
+    color: #ad7a3c;
+    margin-top: 10px;
+    opacity: 1;
+}
+
+.hidden-box {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* IMAGE SIZE (Already Set) */
+.RoomBooking .items .image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ========== ADDED CHANGES BELOW ========== */
+
+/* Make text section more compact and smaller font */
+.RoomBooking .items .text {
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+    /* Smaller heading inside room box */
+    .RoomBooking .items .text h2 {
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+
+    /* Paragraph under heading */
+    .RoomBooking .items .text p {
+        font-size: 13px;
+        margin: 5px 0;
+    }
+
+    /* Smaller star rating and price */
+    .RoomBooking .items .text h3 {
+        font-size: 14px;
+    }
+
+/* Smaller BOOK NOW button */
+.RoomBooking .items .primary-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 6px;
+}
+
+.booking-popup {
+    display: block;
+    opacity: 1;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #3a2f3a;
+    color: #ad7a3c;
+    padding: 20px 30px;
+    border-radius: 12px;
+    border: 2px solid #ad7a3c;
+    font-size: 20px;
+    z-index: 1000;
+    box-shadow: 0 0 15px rgba(173, 122, 60, 0.5);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+
+/*-------------------------OUR SERVICES----------------------*/
+/* Styling for the heading container */
+.gallery .heading {
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 20px;
+    display: inline-block;
+    padding: 20px;
+    background: #2B1B2F;
+    border-radius: 20px;
+    border: 3px solid #ad7a3c;
+    box-shadow: 0 0 15px rgba(173, 122, 60, 0.5);
+    opacity: 1;
+}
+
+/* "PHOTOS" Styling */
+.gallery h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ad7a3c; 
+    margin-bottom: 0px; 
+    opacity: 1; 
+}
+
+    /* Make the first letter of "PHOTOS" larger */
+    .gallery h1::first-letter {
+        font-size: 150px; 
+        font-weight: bold;
+        color: #ad7a3c; 
+        opacity: 1; 
+    }
+
+/* "OUR SERVICES" styling */
+.gallery h2 {
+    font-size: 45px;
+    font-weight: normal;
+    color: #ad7a3c; 
+    margin-top: -10px; 
+    opacity: 1; 
+}
+
+/* Add padding inside the box */
+.gallery .heading h1,
+.gallery .heading h2 {
+    display: block;
+    padding: 5px 15px;
+}
+
+/*--------------------services----------------*/
+/* Styling for the heading container */
+.services .heading {
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 20px;
+    display: inline-block;
+    padding: 20px;
+    background-color: #2B1B2F;
+    border-radius: 20px;
+    border: 3px solid #ad7a3c;
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(173, 122, 60, 0.5);
+}
+
+/* "SERVICES" Styling */
+.services h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ad7a3c; 
+    margin-bottom: 0px; 
+    opacity: 1; 
+}
+
+    /* Make the first letter of "SERVICES" larger */
+    .services h1::first-letter {
+        font-size: 150px; 
+        font-weight: bold;
+        color: #ad7a3c; 
+        opacity: 1; 
+    }
+
+/* "What we Provide?" styling */
+.services h2 {
+    font-size: 45px;
+    font-weight: normal;
+    color: #ad7a3c; 
+    margin-top: -10px; 
+    opacity: 1; 
+}
+
+/* Add padding inside the box */
+.services .heading h1,
+.services .heading h2 {
+    display: block;
+    padding: 5px 15px;
+}
+
+
+#services {
+    padding: 30px 0;
+}
+.gallery{
+    position: relative;
+}
+
+.services {
+    position: relative;
+}
+
+.grid2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+}
+
+.services .left {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.services .box {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.5s;
+    padding: 30px 30px;
+    align-items: center;
+    background: #3a2f3a;
+    box-shadow: 0 0 15px #a14fc4;
+}
+
+.services .box .text{
+    padding: 30px 30px;
+    border: 1px dashed white;
+}
+
+.services i{
+    font-size: 50px;
+    color: darkviolet;
+    transition: 0.5s;
+}
+
+.services h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.services img{
+    width: 100%;
+    height: 100%;
+} 
+
+.services .box:hover{
+    background: #ad7a3c;
+    color: #fff;
+    cursor: pointer;
+}
+    .services .box:hover i,
+    .services .box:hover h3 {
+        color: #fff;
+    }
+
+/* Adjusting the FontAwesome Plus Icon */
+.overlay .fa-plus {
+    color: #ad7a3c; 
+    font-size: 24px;
+}
+
+/* Adjusting Image Size */
+.img img {
+    width: 300px; 
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #ad7a3c; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+}
+
+
+.overlay h3 {
+    font-family: "Times New Roman", serif;
+    font-weight: 400;
+    color: #ad7a3c; 
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+
+
+/*--------- Fee Challan------*/
+
+.fee .heading {
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 20px;
+    display: inline-block;
+    padding: 20px;
+    background-color: #2B1B2F;
+    border-radius: 20px;
+    border: 3px solid #ad7a3c;
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(173, 122, 60, 0.5);
+}
+
+.fee h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ad7a3c;
+    margin-bottom: 0px;
+    opacity: 1;
+}
+
+    .fee h1::first-letter {
+        font-size: 150px;
+        font-weight: bold;
+        color: #ad7a3c;
+        opacity: 1;
+    }
+
+.fee {
+    font-family: "Times New Roman", Times, serif;
+    color: black;
+    font-weight: normal;
+    padding: 50px 0;
+}
+
+    .fee .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .fee .column {
+        width: 48%;
+    }
+
+    .fee .box {
+        background: #ad7a3c;
+        padding: 15px;
+        margin-bottom: 15px;
+        border: 5px dotted black;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .fee h2 {
+        font-size: 22px;
+        font-weight: normal;
+        margin-top: 15px;
+    }
+
+    .fee p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+#seeBillBtn {
+    background-color: #ad7a3c;
+    color: black;
+    border: none;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+    #seeBillBtn:hover {
+        background-color: purple;
+    }
+
+.total-box {
+    background: #f5f5f5;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 20px auto; /* Center horizontally */
+    max-width: 400px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+/*---------Portfolio------*/
+.aboutus .heading {
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 20px;
+    display: inline-block;
+    padding: 20px;
+    background-color: #2B1B2F;
+    border-radius: 20px;
+    border: 3px solid #ad7a3c;
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(173, 122, 60, 0.5);
+}
+
+.aboutus h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ad7a3c;
+    margin-bottom: 5px;
+    opacity: 1;
+}
+
+    .aboutus h1::first-letter {
+        font-size: 150px;
+        font-weight: bold;
+        color: #ad7a3c;
+        opacity: 1;
+    }
+
+.aboutus h2 {
+    font-size: 45px;
+    font-weight: normal;
+    color: #ad7a3c;
+}
+
+#about {
+    padding: 50px 0; /*----50 from top and 0 from bottom-----*/
+}
+
+.aboutus {
+    position: relative;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 300px; /* Increase the width to make the image larger */
+    height: 300px; /* Increase the height to make the image larger */
+    display: flex; /* Use flexbox to center the content */
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Center vertically */
+    margin: 10px; /* Optional: Space between items */
+}
+
+    .work img {
+        width: 100%; /* Image will fill the container */
+        height: 100%; /* Image will fill the container */
+        object-fit: cover; /* Ensure the image covers the container while maintaining aspect ratio */
+        border-radius: 10px;
+        display: block;
+        transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
+        margin-left: 20px; /* Move the image slightly to the right */
+    }
+
+.layer {
+    width: 100%; /* Overlay fills the container */
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #bf00bf);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s ease-in-out;
+}
+
+.work:hover .layer {
+    height: 100%; /* Show overlay when hovered */
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #bf00bf;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+/* Zoom effect on hover */
+.work:hover img {
+    transform: scale(1.2); /* Increase scale to make image grow more */
+}
+
+
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #bf00bf;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #bf00bf;
+    transition: background 0.5s;
+}
+
+    .btn:hover {
+        background: purple;
+        color: white;
+    }
+
+
+/* Modal Container */
+.member-modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Dim background */
+}
+
+/* Modal Content Box */
+.member-modal-content {
+    background-color: #000;
+    color: #ad7a3c;
+    margin: 10% auto;
+    padding: 30px;
+    border: 3px solid #ad7a3c;
+    border-radius: 20px;
+    width: 60%;
+    text-align: center;
+    position: relative;
+}
+
+/* Close Button */
+.member-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #ad7a3c;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+    .member-modal-close:hover {
+        color: purple;
+    }
+
+/* For About Modal */
+#aboutModal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+    #aboutModal .modal-content {
+        background-color: #000;
+        color: #ad7a3c;
+        margin: 10% auto;
+        padding: 30px;
+        border: 3px solid #ad7a3c;
+        border-radius: 20px;
+        width: 60%;
+        text-align: center;
+        position: relative;
+    }
+
+    #aboutModal .close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        color: #ad7a3c;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: color 0.3s;
+    }
+
+        #aboutModal .close:hover {
+            color: purple;
+        }
+
+/*------Contact--------*/
+#Contact .container {
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 20px;
+    display: inline-block;
+    padding: 20px;
+    background-color: #2B1B2F;
+    border-radius: 20px;
+    border: 3px solid #ad7a3c;
+    opacity: 1;
+    box-shadow: 0 0 15px rgba(173, 122, 60, 0.5);
+}
+
+#Contact .sub-title {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ad7a3c;
+    margin-bottom: 5px;
+    opacity: 1;
+}
+
+#Contact .sub-title::first-letter {
+    font-size: 150px;
+    font-weight: bold;
+    color: #ad7a3c;
+    opacity: 1;
+}
+
+#Contact p {
+    font-size: 20px;
+    font-weight: normal;
+    color: #ad7a3c;
+}
+
+
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+    .contact-left p i {
+        color: #bf00ff;
+        margin-right: 15px;
+        font-size: 25px;
+    }
+
+.social-icons {
+    margin-top: 30px;
+}
+
+    .social-icons a { /*-------For icons color------*/
+        text-decoration: none;
+        font-size: 30px;
+        margin-right: 15px;
+        color: #ad7a3c;
+        display: inline-block;
+        transition: transform 0.5s;
+    }
+
+        .social-icons a:hover {
+            color: #bf00ff;
+            transform: translateY(-6px); /*---Move the icon up------*/
+        }
+
+.btn.btn2 {
+    display: inline-block;
+    background: purple;
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #3a2f3a;
+    padding: 15px;
+    margin: 15px 0;
+    color: #ad7a3c;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2 {
+    padding: 14px 60px;
+    width: large;
+    font-size: 18px;
+    color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background-color: #ad7a3c;
+    color: white;
+    border: 2px solid #ad7a3c;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0px;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.contact-left {
+    flex: 1;
+    min-width: 250px;
+}
+
+.contact-right {
+    flex: 1.5;
+    min-width: 300px;
+}
+
+.hidden-message {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #262626;
+    color: #ad7a3c;
+    border: 2px solid #ad7a3c;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.visible-message {
+    display: block;
+}
